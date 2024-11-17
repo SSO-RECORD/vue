@@ -1,0 +1,61 @@
+/* 전체 네비게이션 바 스타일 */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed; /* 상단에 고정 */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  /* 컨테이너 중앙 정렬 및 양쪽 끝 배치 */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 화면 중앙에 배치 */
+    padding: 0 20px;
+  }
+  
+  /* 로고 스타일 */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #007bff; /* 강조 색상 */
+  }
+  
+  /* 메뉴 스타일 */
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .menu li a:hover {
+    color: #007bff; /* 링크에 마우스를 올렸을 때 색상 변경 */
+  }
+  
+  /* 네비게이션 바 아래 내용이 가려지지 않도록 패딩 추가 */
+  body {
+    padding-top: 60px; /* 네비게이션 바 높이만큼 패딩 추가 */
+  }
+  
